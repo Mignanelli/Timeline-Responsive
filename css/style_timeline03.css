@@ -1,0 +1,70 @@
+.my__container__in{border:#000 solid 0px;}
+
+.my__container__in  h1{ border:#000 solid 0px;text-align: center;}
+.my__container__in  h3{ border:#000 solid 0px; text-align: center;}
+
+
+.timeline{
+    width:100%; margin:5vh auto;
+    display: flex;flex-wrap: wrap;
+}
+
+
+.timeline__in{    
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    min-height:50px;
+    justify-content: center;
+}
+
+.timeline__in__data{
+    display: flex;
+    background:linear-gradient(to right, #fff 45%, #000 45%, #000 45%, #fff 50%);
+    order:2;
+  /*  z-index:9999;*/
+}
+
+/*.timeline__in__data::after{
+    content:'';
+    border:#e7e7e7 solid 2px;
+    bottom:0;height:100%;
+    left:-50%;       
+}*/
+
+
+
+.timeline__in__data span{
+    background-color: #000;
+    color:#fff;
+    text-align: center;
+    margin:auto;
+    margin-top:5vh;
+    padding:2vh;
+}
+
+.timeline__in__text{
+    border-radius:2vh;
+    margin:4vh 1vh;
+    padding:2vh;
+    text-align:center;
+    width: 80%;
+    order:3;
+    border:#474747 solid 2px;
+}
+
+
+
+@media ( min-width:640px ){
+    .timeline__in__text,
+    .timeline__in__nascosto{
+        width:45%;
+    }
+
+    .timeline__in--right .timeline__in__text{
+        order:1;
+    }
+
+    .timeline__in__nascosto{margin:1vh;}
+    .timeline__in--right .timeline__in__nascosto{order:3;}
+}
